@@ -1,0 +1,153 @@
+body{
+    font-family: "Roboto Condensed", serif;
+}
+
+#heading-page{
+    margin-top: 5%;
+    height: 40rem;
+    display: grid;
+    height: 400px;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    
+    
+}
+.text-card{
+    width: 25rem;
+}
+.text-card > h1{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+.text-card > p{
+    font-size: 1.1rem
+}
+#header-img{
+    grid-column: 2/3;
+    
+    scale: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heading-square{
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    grid-column: 1/2;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #3b4b60;
+}
+#heading-square > *{
+    color: #ffffff;
+}
+#edu-exp-section{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#edu-exp-page{
+    width: 80%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40%  60%;
+}
+#education-card{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-content: center;
+}
+#education-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.img-edu{
+    object-fit: cover;
+}
+.img-exp{
+    object-fit: cover;
+}
+#coding-img-panel{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.coding-img{
+    object-fit: cover;
+}
+#experience-icon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#experience-card-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    align-items: start;
+}
+#skills-page{
+    margin-left: 40px;
+    margin-top: 100px;
+    padding: 0px 20px
+}
+
+#project-preview{
+    margin: 100px 100px;
+}
+
+@media (max-width:1000px){
+    #edu-exp-page{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+    }
+    .img-edu{
+        scale: 70%;
+        display: none;
+        
+    }
+    .img-exp{
+        scale: 70%;  
+        display: none;
+    }
+    #experience-card-text{
+        order: -1;
+    }
+}
+@media (max-width:800px){
+    #header-img{
+        align-content: end;
+    }
+    #szymon-img{
+        scale: 80%;
+    }
+    .text-card > h1{
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        margin-left: 20px;
+    }
+    .text-card > p{
+        font-size: 0.9rem;
+        margin-left: 20px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+    .ml-20{
+        margin-left: 20px;
+    }
+}
+
+
+
